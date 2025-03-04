@@ -7,7 +7,7 @@
 }
 body {
   min-height: 100vh;
-  background: url("OIP.jpg") no-repeat;
+  background: url("OIP.png") ;
   background-size: cover;
   background-position: center;
 }
@@ -58,7 +58,7 @@ body {
   transition: 0.3s;
 }
 .navbar a:hover {
-  color: rgb(84, 83, 83);
+  color: #f00;
 }
 #menu-icon {
   font-size: 36px;
@@ -104,5 +104,104 @@ body {
   }
   .nav-bg.active {
     display: block;
+  }
+}
+
+
+/* image slider */
+
+
+.slider-container { position: relative;  overflow: hidden; border-radius: 8px; box-shadow: 1px rgba(0,0,0,0.3); }
+.slider { display: flex; transition: transform 0.5s ease-in-out; }
+.slide { min-width: 100%; transition: opacity 0.5s; }
+.slide img { width: 100%; height: auto; border-radius: 8px; }
+
+.slider-container{
+  margin-top: 120px;
+ 
+  width: 600px;
+  
+  
+}
+
+
+.text34{
+  margin-top: 120px;
+  width: 600px;
+}
+
+.text34 h1{
+  color: #e2e0e0;
+}
+
+.slider23{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10px;
+  gap: 10px;
+  
+}
+
+.text34 p{
+  color: #9e9c9c;
+}
+ .btn1{
+  width: 200px;
+  height: 30px;
+  border-radius:20px 1px 20px 1px;
+  box-shadow: 2px 5px 20px 0px black;
+  
+ }
+ .btn1:hover{
+  background-color: #9e9c9c;
+ }
+
+/* animated text like writing */
+.text-container3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  overflow: hidden; 
+  border-right: .15em solid rgb(243, 9, 28); /* Typing cursor */
+  white-space: nowrap; /* Prevents text from wrapping */
+  margin: 0 auto; /* Center aligns the container */
+  animation: typing 3s steps(40) infinite alternate; /* Animation effect */
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@media (max-width: 995px){
+  
+.slider23{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  gap: 1px;
+  margin-top: 1px;
+  
+
+  
+  
+}
+
+
+}
+
+@media(max-width: 664px){
+  .slider-container{
+    width: 100%;
+    
+  }
+
+  .text34{
+    width: 100%;
+    margin-top: 30px;
   }
 }
