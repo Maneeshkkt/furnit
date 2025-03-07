@@ -165,15 +165,18 @@ body {
 .text34 p{
   color: #9e9c9c;
 }
- .btn1{
-  width: 200px;
-  height: 30px;
+ .btn1 {
+  width: 190px;
+  background-color: #ffffff;
+  height: 35px;
   border-radius:20px 1px 20px 1px;
   box-shadow: 2px 5px 20px 0px black;
-  
+  font-weight: 550; 
+  font-family: "Poppins", sans-serif;
  }
  .btn1:hover{
   background-color: #9e9c9c;
+  box-shadow: 2px 5px 10px 0px rgb(249, 248, 248);
  }
 
 /* animated text like writing */
@@ -586,10 +589,11 @@ input[type="checkbox"]{
 .container34{
   display: none;
   background: #fff;
-  width: 250px;
-  height: 310px;
+  width: 330px;
+  height: 330px;
   padding: 17px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  box-shadow: 0 0 8px rgba(33, 34, 34, 0.1);
+  position: fixed;
 }
 #show:checked ~ .container34{
   display: block;
